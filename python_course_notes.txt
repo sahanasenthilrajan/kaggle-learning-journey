@@ -1,0 +1,103 @@
+Kaggle Python Course – Theory, Syntax, and Examples
+
+1. Hello, Python
+----------------
+- Print:
+  print("Hello, Python")
+
+- Comments:
+  # This is a single-line comment
+
+- Expressions:
+  3 + 5 * 2      # 13
+  8 / 2          # 4.0 (float division)
+  8 // 2         # 4 (integer division)
+  7 % 3          # 1 (modulus)
+  2 ** 3         # 8 (power)
+
+- Variables:
+  x = 10
+  name = "Sahana"
+
+- Types and conversion:
+  type(3), type("hi"), type(True)
+  int("42"), float("3.5"), str(123), bool(0)
+
+2. Functions and Getting Help
+-----------------------------
+- Defining functions:
+  def add(a, b):
+      return a + b
+
+- Default arguments:
+  def greet(name="friend"):
+      return f"Hello, {name}"
+
+- Help and dir:
+  help(len)
+  dir(str)
+  dir(__builtins__)
+
+3. Booleans and Conditionals
+----------------------------
+- Boolean logic:
+  True and False, not True, 3 == 3, 3 != 4
+
+- If statements:
+  if score >= 90:
+      grade = "A"
+  elif score >= 80:
+      grade = "B"
+  else:
+      grade = "C"
+
+4. Lists
+--------
+- Create and access:
+  nums = [10, 20, 30]
+  nums[0], nums[-1], nums[1:3]
+
+- Modify:
+  nums.append(40), nums.insert(1, 15), nums.remove(30)
+
+- Sort:
+  nums.sort(), sorted(nums)
+
+5. Loops
+--------
+- For loop:
+  for n in nums:
+      print(n)
+
+- While loop:
+  while x < 5:
+      x += 1
+
+- Break/continue:
+  for n in range(10):
+      if n == 5: break
+      if n % 2 == 0: continue
+
+6. List Comprehensions
+----------------------
+- squares = [n*n for n in range(6)]
+- evens = [n for n in range(10) if n % 2 == 0]
+
+7. Strings and Dictionaries
+---------------------------
+- Strings:
+  "hello".upper(), "a,b,c".split(","), "-".join(["a","b"])
+
+- Dictionaries:
+  student = {"name": "Sahana", "age": 21}
+  student["name"], student.get("cgpa", 0)
+
+8. Working with External Libraries
+----------------------------------
+- Import:
+  import math
+  from math import pi
+  import numpy as np
+
+- dir() and help():
+  dir(math), help(math.sqrt)
