@@ -1,0 +1,35 @@
+Kaggle Data Visualization Course – Theory, Syntax, and Examples
+
+1. Hello, Seaborn
+-----------------
+- import seaborn as sns
+- sns.set_theme(style="whitegrid")
+- sns.scatterplot(data=df, x="age", y="salary")
+
+2. Scatter Plots
+----------------
+- sns.scatterplot(data=df, x="height", y="weight", hue="gender")
+
+3. Line Charts
+--------------
+- sns.lineplot(data=df, x="year", y="sales")
+
+4. Bar Charts
+-------------
+- sns.barplot(data=df, x="category", y="value")
+
+5. Heatmaps
+-----------
+- sns.heatmap(df.corr(), annot=True)
+
+6. Histograms and Density Plots
+-------------------------------
+- sns.histplot(df["age"], bins=10)
+- sns.kdeplot(df["age"])
+
+7. Styling
+----------
+- sns.set_style("darkgrid")
+- sns.set_context("talk")
+- ax.set_title("Title"), ax.set_xlabel("X"), ax.set_ylabel("Y")
+- plt.savefig("plot.png", dpi=300)
