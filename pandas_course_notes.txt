@@ -1,0 +1,37 @@
+Kaggle Pandas Course – Theory, Syntax, and Examples
+
+1. Creating, Reading, Writing
+-----------------------------
+- import pandas as pd
+- pd.Series([1, 2, 3])
+- pd.DataFrame({"city": ["Madurai", "Chennai"], "pop": [1.5, 11.2]})
+- pd.read_csv("file.csv"), df.to_csv("out.csv", index=False)
+
+2. Indexing, Selecting, Assigning
+---------------------------------
+- df["column"], df[["col1", "col2"]]
+- df.loc[0], df.iloc[0]
+- df[df["pop"] > 5]
+- df["new_col"] = df["pop"] * 2
+
+3. Summary Functions and Maps
+-----------------------------
+- df["pop"].mean(), df.describe()
+- df["city"].value_counts(), df["city"].map({"Madurai": "MDU"})
+
+4. Grouping and Sorting
+-----------------------
+- df.groupby("city")["pop"].mean()
+- df.sort_values("pop", ascending=False)
+
+5. Data Types and Missing Values
+--------------------------------
+- df.dtypes, df["pop"].astype("float")
+- df.isna().sum(), df.fillna(0), df.dropna()
+
+6. Renaming and Combining
+-------------------------
+- df.rename(columns={"pop": "population"})
+- pd.concat([df1, df2])
+- pd.merge(df1, df2, on="city", how="left")
+- df.pivot(index="city", columns="year", values="pop")
