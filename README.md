@@ -1,4 +1,4 @@
-# kaggle-learning-journey
+# My kaggle-learning-journey
 
 ## About
 This repository contains my Kaggle exercises and learning materials.
